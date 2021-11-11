@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: 'echo "TODO: Replace with init/build command"'
+    command: 'echo "TODO: Replace with command to start project"'
+
+vscode:
+  extensions:
+    - salesforce.salesforcedx-vscode-core@51.3.0:8cdd5859ce89a6390a0c975e59e2438a
+    - salesforce.salesforcedx-vscode-apex@51.3.0:f06e4af1383f8d43a677ef715b992c4c
+    - salesforce.salesforcedx-vscode-apex-debugger@51.3.0:8695296d3aa078acec17764f14458e20
+    - salesforce.salesforcedx-vscode-apex-replay-debugger@51.3.0:e24a566ff825be3b9056287d7859ad94
+    - salesforce.salesforcedx-vscode-lwc@51.3.0:d014ffb0a9773a4c8e7dc3ed11856003
+    - salesforce.salesforcedx-vscode-lightning@51.3.0:7dd4a7f56bdd50d34a2ab56f8c5a6505
+    - salesforce.salesforcedx-vscode-visualforce@51.3.0:1170c5c0ba3b493a70a1e7ac43241432
+    - salesforce.salesforce-vscode-slds@1.4.2:44179501a25ce72d934ba6adfa192c4d
