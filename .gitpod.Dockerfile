@@ -1,5 +1,5 @@
 #
-# source - https://github.com/forcedotcom/salesforcedx-docker/blob/develop/dockerfiles/Dockerfile_slim
+# source - https://github.com/forcedotcom/salesforcedx-docker/blob/develop/dockerfiles/Dockerfile_full
 #
 
 FROM heroku/heroku:18
@@ -17,8 +17,9 @@ ENV PATH=/usr/local/lib/nodejs/bin:$PATH
 RUN npm install --global sfdx-cli@${SALESFORCE_CLI_VERSION}
 
 RUN apt-get install --assume-yes \
-  openjdk-11-jdk-headless 
-  
+  openjdk-11-jdk-headless \
+  jq
+
 RUN apt-get autoremove --assume-yes \
   && apt-get clean --assume-yes \
   && rm -rf /var/lib/apt/lists/*
